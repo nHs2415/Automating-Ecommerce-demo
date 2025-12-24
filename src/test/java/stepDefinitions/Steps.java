@@ -13,9 +13,8 @@ public class Steps {
 
     @Given("User Launch Chrome Browser")
     public void user_launch_chrome_browser() {
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user")+"//Drivers//chromedriver.exe");
-        driver = new ChromeDriver();
-        lp = new LoginPage(driver);
+            driver = new ChromeDriver();
+            lp = new LoginPage(driver);
     }
 
     @When("User opes URL {string}")
